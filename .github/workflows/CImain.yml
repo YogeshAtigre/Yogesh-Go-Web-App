@@ -78,6 +78,7 @@ jobs:
         token: ${{ secrets.TOKEN }}
 
     - name: Update tag in Helm chart
+      working-directory: ./Yogesh-web-app
       run: |
         sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/yogesh-web-app/values.yaml
 
