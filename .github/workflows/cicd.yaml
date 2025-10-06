@@ -27,7 +27,7 @@ jobs:
           go mod tidy
 
       - name: Build the code 
-        run: go build -o yogesh-web-app yogesh-web-app
+        run: go build -o yogesh-web-app .
 
   code-quality:
     runs-on: ubuntu-latest
