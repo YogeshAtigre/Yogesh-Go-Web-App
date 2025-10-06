@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yogesh-web-app-deployment
+  labels:
+    app: yogesh-web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yogesh-web-app
+  template:
+    metadata:
+      labels:
+        app: yogesh-web-app
+    spec:
+      containers:
+      - name: yogesh-web-app
+        image: yogeshatigre07/yogeshwebapp:v1 
+        resources:
+          # limits:
+          #   memory: "128Mi"
+          #   cpu: "500m"
+        ports:
+        - containerPort: 8060

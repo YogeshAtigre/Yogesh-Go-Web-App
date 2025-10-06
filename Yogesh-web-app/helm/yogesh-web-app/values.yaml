@@ -1,0 +1,13 @@
+replicas: 1
+
+
+image: 
+  repository: "yogeshatigre07/yogeshwebapp"
+  tag: "v1"
+
+ports:
+  containerPort: 8060
+  port: 80
+  targetPort: 8060
+
+type: ClusterIP
