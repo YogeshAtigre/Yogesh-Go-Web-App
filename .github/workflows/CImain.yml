@@ -21,16 +21,12 @@ jobs:
         with: 
           go-version: 1.22
 
-      - name: Initialize Go module
-        run: |
-          go mod init yogesh-web-app
-          go mod tidy
-
       - name: List files for debugging
         run: ls -R
 
       - name: Build the code 
-        run: go build -o yogesh-web-app
+        working-directory: ./Yogesh-web-app
+        run: go build -o yogesh-web-app .
 
   code-quality:
     runs-on: ubuntu-latest
