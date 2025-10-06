@@ -83,6 +83,7 @@ jobs:
         sed -i 's/tag: .*/tag: "${{github.run_id}}"/' helm/yogesh-web-app/values.yaml
 
     - name: Commit and push changes
+      working-directory: ./Yogesh-web-app
       run: |
         git config --global user.email "yogeshatigre2000@gmail.com"
         git config --global user.name "Yogesh Atigre"
