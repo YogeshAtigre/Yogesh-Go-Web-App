@@ -21,6 +21,11 @@ jobs:
         with: 
           go-version: 1.22
 
+      - name: Initialize Go module
+        run: |
+          go mod init Yogesh-Go-Web-App
+          go mod tidy
+
       - name: Build the code 
         run: go build -o yogesh-web-app
 
