@@ -23,7 +23,7 @@ jobs:
 
       - name: Initialize Go module
         run: |
-          go mod init Yogesh-Go-Web-App
+          go mod init yogesh-web-app
           go mod tidy
 
       - name: Build the code 
