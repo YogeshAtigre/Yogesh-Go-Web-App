@@ -3,7 +3,7 @@ replicas: 1
 
 image: 
   repository: "yogeshatigre07/yogeshwebapp"
-  tag: "18279987964"
+  tag: "18280015394"
 
 ports:
   containerPort: 8060
