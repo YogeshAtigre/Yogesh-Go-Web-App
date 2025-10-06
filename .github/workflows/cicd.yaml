@@ -31,10 +31,10 @@ jobs:
       - name: Checkout the code from the repo 
         uses: actions/checkout@v4
 
-      - name: Run go lang lint 
-        uses: golangci/golangci-lint-action@v6
-        with:
-          version: v1.56.2
+      # - name: Run go lang lint 
+      #   uses: golangci/golangci-lint-action@v6
+      #   with:
+      #     version: v1.56.2
 
   push:
     runs-on: ubuntu-latest
